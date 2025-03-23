@@ -41,7 +41,7 @@ void encoderUpdate(){
 
 void switchUpdate(){
    // Read and debounce the state of each switch
-  for (int i = 0; i < NUM_SWITCHES; i++) {
+  for (uint8_t i = 0; i < NUM_SWITCHES; i++) {
     int reading = digitalRead(SWITCHES[i]);
     if (reading != lastSwitchState[i]) {
       lastDebounceTime[i] = millis();
@@ -60,7 +60,7 @@ void switchUpdate(){
   }
 }
 
-void handleSwitch(int switchIndex) {
+void handleSwitch(uint8_t switchIndex) {
   switch (TYPE[switchIndex]) {
     case NOTE:
         midiNoteOn(switchIndex);

@@ -18,7 +18,7 @@ returns (10, 104, FW_VERSION) 10 for version 1.0
 show configuration
 ./midiutil.py -d 1 -w 186 102 46
 returns the config of each of the 6 buttons, the rotary knob and rotary encoder
-
+c
 show stepsize 
 ./midiutil.py -d 1 -w 186 102 47
 returns (10, 105, encStepSize)

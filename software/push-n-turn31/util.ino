@@ -102,12 +102,9 @@ void readEEPROM(){
 
 void writeEEPROM(){
   eeprom_write_byte(0, MIDI_CHANNEL);
-      delay(50);
   eeprom_write_byte(1, encStepSize);
   for (int i = 0; i < 5; i++) {
-    delay(50);
     eeprom_write_byte(2+i, TYPE[i]);
-    delay(50);
     eeprom_write_byte(9+i, DATA[i]);
   }
 }

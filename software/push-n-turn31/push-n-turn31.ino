@@ -28,9 +28,9 @@
 #endif
 
 void setup(){
- readEEPROM();
   init_PINS();
   if (NUM_ENCODERS > 0) init_ENCODER();
+  readEEPROM();
 
   init_NEO();
 

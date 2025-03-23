@@ -30,10 +30,8 @@ void onCTLChange(uint8_t ch, uint8_t note, uint8_t vel);
 
 void init_ENCODER();
 void encoderUpdate();
-void signalEncoderChange(uint8_t value);
 
 void switchUpdate();
-//void checkModeSwitching(int key1, int key2);
-void handleSwitch(int switchIndex);
+void handleSwitch(uint8_t switchIndex);
 void readEEPROM();
 void writeEEPROM();
